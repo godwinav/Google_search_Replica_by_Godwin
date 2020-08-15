@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main{
+            position: relative;
+            padding-bottom: 40px;
+        }
+        .navbar{
+            
+            display: flex;
+            justify-content: flex-end;
+           
+        }
+        a{
+            margin-top: 20px;
+            margin-left: 12px;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+       .nav{
+           margin-bottom: 10px;
+       }
+       #onhover{
+           color: green;
+       }
+       #menu{
+           width: 35px;
+           height: 50%;
+           margin-top: 10px;
+           margin-left: 20px;
+           margin-right: 5px;
+          
+         
+       }
+       #user{
+           margin-right: 20px;
+           margin-bottom: 10px;
+       }
+        #logo-container{
+            width: 400px;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         align-items: center;
+         font-weight: 200px;
+         position: relative;
+         bottom: 30%;
+           
+        }
+        .middle{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            align-items: center;
+        }
+
+        .input-container{
+           width: 600px;
+           border-radius: 80px;
+           height: 45px;
+           border: .5px solid #E5E5E6;
+  
+           
+       }
+
+       .input-container:hover{
+        box-shadow: 3px 1px #E5E5E6;
+      
+       }
+       input{
+        position: relative;
+        bottom: 2px;
+        left: 60px;
+        width: 460px;
+        height: 35px;
+        outline-width: 0;
+        border: none;
+       }
+       
+
+       #voice{
+           position: relative;
+           left: 13% !important;
+           top: 8px;
+           margin-left: 0;
+           cursor: pointer;
+           
+       }
+       #search{
+        position: relative;
+           left: -83% !important;
+           top: 5px;
+           margin-left: 0;
+       }
+       button{
+           margin-top: 30px;
+           position: relative;
+           left: 25%;
+           width: 140px;
+           height: 35px;
+           font-size: 15px;
+           margin-right: 5px;
+           color: #222835;
+           border: none;
+           border-radius: 5px;
+       }
+       button:hover{
+           border: 0.5px solid gray;
+       }
+        p{
+           font-size: 12px;
+           margin-left: 30px;
+       }
+       .cnter a{
+           font-size: 12px;
+       }
+       
+       
+       .location{
+           position: relative;
+           margin-top: 30px;
+           left: 25%;
+           
+       }
+       .location a{
+           color: blue;
+       }
+       #chile{
+            width: 100%;
+            height: 30px;
+            background-color: #F2F2F2;
+            position: relative;
+            top: 88px;
+            border: .002px solid #A0A6AB;  
+            padding-top: 10px;
+            padding-left: 30px;
+            opacity: .5;
+            color: #222222;
+       }
+       
+      
+           
+       
+       #links{
+            width: 100%;
+            height: 30px;
+            background-color: #F2F2F2;
+            position: relative;
+            top: 88px;
+            border: .002px solid #A0A6AB;  
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 15px ;
+           border-top: none;
+       }
+       #links a{
+           font-size: 15px;
+           margin-left: 20px;
+           color: #222222;
+           opacity: .5;
+       }
+       #left-float{
+             
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            bottom: 35px;
+            right: 35px;
+           
+       }
+
+
+       #left-float a{
+           font-size: 15px;
+           margin-right: 20px;
+           color: #222222;
+           opacity: .5;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a id="menu" href="#"><img id="onhover" class="margin: 15px;nav" src="./images/menu.png" alt=""></a>
+        <img id="user" class="nav" src="./images/user.png" alt="">
+    </div>
+    <div class="main"></div>
+    <div id="logo-container"> 
+         <img id="logo" src="./images/logo.png" alt="logo">
+    </div>
+
+    <div class="middle">
+            <form class="cnter" action="https://www.google.com/search">
+             <div id="input-container1" class="input-container">
+                <input class="cnter"  type="text" name="" id="" ><span> 
+                    <img id="voice" src="./images/input.png" alt="">
+                    <img id="search" src="./images/search.png" alt="">
+                </span>
+               
+             </div>
+                <br>
+                <button class="cnter" >Google Search</button>
+                <button class="cnter" >I'm Feeling Funky</button>
+                <p class="location" > Google offered in:
+                    <a href="#">Espanol (Latinoamerica) </a>
+                </p>
+            </form>
+
+
+    </div>
+</div> 
+    <footer>
+
+        <div class="footer">
+            <div id="chile">
+                Chile
+            </div>
+    
+        </div>
+
+        <div class="footer">
+            <div id="links">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search Works</a>
+                <div id="left-float">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Setings</a>
+            </div>
+                
+            </div>
+    
+        </div>
+    </footer>
+
+ 
+</body>
+
+</html>
